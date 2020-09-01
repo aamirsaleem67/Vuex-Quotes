@@ -1,4 +1,4 @@
-# quotes-project-with-vuex
+# Quotes project with vuex
 
 ## Project setup
 ```
