@@ -1,19 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container">
+    <app-header></app-header>
+    <new-quote></new-quote>
+    <quotes></quotes>
+    <div class="alert alert-primary" role="alert">Click on quote to delete quote!</div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Quotes from "./components/Quotes.vue";
+import NewQuote from "./components/NewQuote.vue";
+import Header from "./components/Header.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    quotes: Quotes,
+    newQuote: NewQuote,
+    appHeader: Header,
+  },
+};
 </script>
 
 <style>
